@@ -1,0 +1,667 @@
+body,
+html {
+  background-color: black;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+
+}
+
+::-webkit-scrollbar {
+  background-color: #220f18;
+  opacity: 0.5;
+  width: 1vw;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+  background: #00000095;
+  border-radius: 10px;
+
+
+}
+
+.navbar {
+  background: linear-gradient(to bottom, #ef0c75, #fe620b);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburgerMenu {
+  position: absolute;
+  left: 10px;
+  border-radius: 15px;
+  background-color: transparent;
+  border-width: 0px !important;
+  border-color: transparent;
+  width: 5%;
+  aspect-ratio: 1;
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburgerMenu:hover {
+  transition: all 0.4s ease;
+  background-color: #220f18;
+}
+
+.menuContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: max-content;
+  height: auto;
+  background-color: black;
+  transition: transform 0.3s ease-in-out;
+  /* Adding transition */
+  transform: translateX(-100%);
+  /* Start the menu off-screen */
+
+
+}
+
+.menuContent.menuShown {
+  transform: translateX(0);
+  /* Slide the menu in */
+}
+
+.menuContent.menuHidden {
+  transform: translateX(-100%);
+  /* Slide the menu out */
+}
+
+.menuItem {
+  height: 15vh;
+  text-decoration: none;
+  width: 25vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  padding-right: 5px;
+  transition: all 0.4s ease;
+}
+
+.menuItem.active {
+  background-color: grey;
+}
+
+.menuItem.active .activeVertical {
+  background-color: #ed0978;
+}
+
+.menuItem:hover .verticalLine {
+  background-color: #ed0978;
+}
+
+.menuItem:hover {
+  background-color: grey;
+}
+
+.menuItemText {
+  font-size: 4vh;
+  color: white;
+  font-weight: 500;
+  text-align: left;
+  padding-left: 20px;
+
+}
+
+.verticalLine {
+  height: 100%;
+  width: 3%;
+  background-color: transparent;
+  margin-right: 25px;
+}
+
+.guruLogo {
+  height: auto;
+  width: 40px;
+  aspect-ratio: 1.6;
+  margin-right: 15px;
+
+
+}
+
+.logoContainer {
+  width: 18%;
+  aspect-ratio: 3;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.logo1 {
+  height: 100%;
+  width: auto;
+}
+
+.signUp {
+  width: 5%;
+  aspect-ratio: 1;
+  border-width: 2px;
+  border-color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+
+.signUpButton {
+  position: absolute;
+  right: 10px;
+  width: 7%;
+  aspect-ratio: 2;
+  border-width: 3px;
+  border-color: #ed0978;
+  background-color: #8b0546;
+  border-radius: 55px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.signUpButton:hover {
+  transition: all 0.4s ease;
+  background-color: #220f18;
+}
+
+.signUpText {
+  font-size: 20px;
+  color: white;
+  display: flex;
+  text-align: center;
+}
+
+.mainContent {
+  background-color: #220f18;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.titanImage {
+  width: 50%;
+  height: auto;
+
+}
+
+.welcomeTextContainer {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.WelcomeHeader {
+  font-size: 4.5vh;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 55px;
+}
+
+.WelcomeText {
+  font-size: 3vh;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 35px;
+  max-width: 50%;
+}
+
+.qrCode {
+  height: 25vw;
+  aspect-ratio: 1;
+  border-radius: 15px;
+  margin-bottom: 35px;
+}
+
+.hoverUnderLine:hover {
+  transition: all 0.4s ease;
+  text-decoration: underline;
+}
+
+.hoverPink {
+  color: white;
+}
+
+.hoverPink:hover {
+  transition: all 0.4s ease;
+  color: #ed0978;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: auto;
+  width: 100%;
+}
+
+.footerText {
+  font-size: 2vh;
+  color: grey;
+  font-weight: 500;
+  margin: 25px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+
+}
+
+.socialMediaContainer {
+  height: 15vh;
+  width: auto;
+  aspect-ratio: 6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.socialMediaItem {
+  height: 70%;
+  width: auto;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+
+}
+
+.socialMediaItem:hover {
+  transition: all 0.6s ease;
+  background-color: #ed0978;
+}
+
+.whatIsEscom {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.battleImage {
+
+  width: 50vw;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 35px;
+
+}
+
+.gamersImage {
+  width: 38vw;
+  height: auto;
+  border-radius: 15px;
+  padding-right: 10px;
+  margin-bottom: 40px;
+}
+
+.gamersImageContainer {
+  width: 40vw;
+  padding: 0px;
+}
+
+.widen {
+  width: 50%;
+}
+
+.ContactText {
+  font-size: 3vh;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 35px;
+  max-width: 60%;
+
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.left {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 10%;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////*/
+
+@media (max-width: 1450px) {
+
+  .signUpText {
+    font-size: 16px;
+    color: white;
+    display: flex;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .signUpButton {
+    width: 10%;
+  }
+
+  .menuItem {
+    width: 35vw;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+
+
+}
+
+@media (max-width: 1000px) {
+  .WelcomeHeader {
+    font-size: 3.5vh;
+    margin-top: 50px;
+  }
+
+  .WelcomeText {
+    font-size: 2.5vh;
+  }
+}
+
+@media (max-width: 850px) {
+
+  .navbar {
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+  }
+
+  .mainContent {
+    flex-direction: column;
+  }
+
+  .welcomeTextContainer {
+    width: 90%;
+  }
+
+  .qrCode {
+    height: 50vw;
+  }
+
+  .signUpButton {
+
+    width: 12%;
+  }
+
+  .logoContainer {
+    width: 25%;
+
+  }
+
+  .hamburgerMenu {
+    left: 5px;
+    width: 10%;
+
+  }
+
+  .WelcomeHeader {
+    margin-top: 50px;
+  }
+
+  .WelcomeText {
+    font-size: 3vh;
+  }
+
+  .menuItem {
+    width: 45vw;
+  }
+
+  .titanImage {
+    width: 90vw;
+  }
+
+  .battleImage {
+    width: 80vw;
+  }
+
+  .widen {
+    font-size: 4vh;
+  }
+
+  .gamersImageContainer {
+    width: 60vw;
+  }
+
+  .gamersImage {
+    width: 100%;
+  }
+
+
+}
+
+@media (max-width: 700px) {
+
+  .signUpButton {
+
+    width: 15%;
+    aspect-ratio: 3.5;
+    max-height: 95%;
+  }
+
+  .menuItem {
+    width: 55vw;
+  }
+
+  .socialMediaContainer {
+    max-width: 80vw;
+  }
+
+
+
+}
+
+@media (max-width: 600px) {
+
+  .navbar {
+    height: 10vh;
+  }
+
+  .signUpButton {
+
+    width: 20%;
+    aspect-ratio: 3;
+    max-height: 95%;
+
+
+  }
+
+  .qrCode {
+    height: 70vw;
+  }
+
+  .logoContainer {
+    width: 30%;
+
+  }
+
+  .logo1 {
+    height: 100% !important;
+    width: auto;
+  }
+
+  .hamburgerMenu {
+    left: 5px;
+    width: 12%;
+
+  }
+
+  .menuItem {
+    width: 65vw;
+  }
+
+  .widen {
+    font-size: 3vh;
+  }
+
+
+
+}
+
+@media (max-width: 500px) {
+  .WelcomeText {
+    font-size: 2.5vh;
+  }
+
+  .gamersImageContainer {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .footerText {
+    font-size: 1.5vh;
+  }
+}
+
+
+@media (max-width: 450px) {
+
+  .navbar {
+
+    height: 12vh;
+
+  }
+
+  .WelcomeHeader {
+    font-size: 2.5vh;
+  }
+
+  .signUpButton {
+
+    width: 22%;
+    aspect-ratio: 3;
+    max-height: 95%;
+
+
+  }
+
+  .signUpText {
+    font-size: 12px;
+
+  }
+
+  .logoContainer {
+    width: 35%;
+
+  }
+
+  .hamburgerMenu {
+    left: 2px;
+    width: 18%;
+
+  }
+
+  .WelcomeText {
+    font-size: 2.5vh;
+  }
+
+  .menuItem {
+    width: 100vw;
+  }
+
+
+
+}
+
+@media (max-width: 400px) {
+
+
+
+  .logoContainer {
+    width: 40%;
+
+  }
+
+  .hamburgerMenu {
+    left: 5px;
+    width: 20%;
+
+  }
+
+  .footerText {
+    font-size: 1vh;
+  }
+
+  .WelcomeText {
+    font-size: 3.5vw;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerText {
+    font-size: 1.5vh;
+  }
+
+
+
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
